@@ -9,6 +9,7 @@ char = {}
 
 client:on("messageCreate", function(msg) --Run whenever a new message is sent
   if msg.author.id == client.owner.id then if msg.content == "!//update" then
+	os.execute("git fetch https://github.com/Wintermourn/surpluxbot")
     os.execute("luvit.exe bot")
     os.execute("exit")
   end
