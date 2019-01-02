@@ -6,3 +6,7 @@
 /Surplux/Exports/*
 /Surplux/UDat/*
 /Surplux/Guilds/*
+
+#ignore etc.
+gateway.json
+discordia.log
