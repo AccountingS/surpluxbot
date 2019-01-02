@@ -7,7 +7,7 @@ guildData = {} --Guild data for stuff, duh.
 userData = {} --Data for users.
 char = {}
 
-client:on("messageCreate", function(msg) --Run whenever a new message is sent
+client:on("messageCreate", function(msg) --Run whenever a new message is sent :D
   if msg.author.id == client.owner.id then if msg.content == "!//update" then
 	os.execute("git pull https://github.com/Wintermourn/surpluxbot")
     os.execute("luvit.exe bot")
