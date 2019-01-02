@@ -6,9 +6,20 @@ images = require("Surplux/images")
 guildData = {} --Guild data for stuff, duh.
 userData = {} --Data for users.
 char = {}
-
+authors = {
+	"115529446370443265",
+	"155703014923960320"
+}
+function getAuthors(id)
+	for i, k in pairs(authors) do
+	if id == k then
+			return true
+			end
+		end
+	return false
+	end
 client:on("messageCreate", function(msg) --Run whenever a new message is sent :D
-  if msg.author.id == client.owner.id then if msg.content == "!//update" then
+  if getAuthors(msg.author.id) then if msg.content == "!//update" then
 	os.execute("git pull https://github.com/Wintermourn/surpluxbot")
     os.execute("luvit.exe bot")
     os.execute("exit")
