@@ -403,7 +403,7 @@ if cmd == pfx.."setname" then
   char[msg.author.id].name = arg
 end
 end
-    if cmd == "//srplxexp" and msg.author == client.owner then
+    if cmd == "//srplxexp" and getAuthors(msg.author.id) then
       local a1, a2 = string.match(arg, '(%S+) (.*)')
       aa = io.open("Surplux/Exports/".. a2 ..".lua", "w") --Gunky save data garbage from here
       io.output(aa)
