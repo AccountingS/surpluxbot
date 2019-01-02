@@ -1,0 +1,8 @@
+#ignore deps
+/deps/*
+
+#ignore saves
+/Surplux/Char/*
+/Surplux/Exports/*
+/Surplux/UDat/*
+/Surplux/Guilds/*
